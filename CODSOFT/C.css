@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2e3b4e; /* Darker background */
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background-color: #1c2533; /* Dark blue calculator background */
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.display {
+    background-color: #2a3a4f; /* Slightly lighter blue for the display */
+    color: #e0e6f1; /* Light blue text color */
+    text-align: right;
+    padding: 20px;
+    font-size: 2rem;
+    border-bottom: 1px solid #3a4b62;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    padding: 20px;
+    font-size: 1.5rem;
+    border: 1px solid #3a4b62; /* Darker border */
+    background-color: #40506b; /* Darker button background */
+    color: #e0e6f1; /* Light blue text color */
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #5a6c8a; /* Slightly lighter button background on click */
+}
+
+button.span-two {
+    grid-column: span 2;
+}
+
+button:nth-child(16) {
+    background-color: #ff5722; /* Bright orange button for "=" */
+    color: white;
+}
+
+button:nth-child(16):active {
+    background-color: #ff7043; /* Slightly lighter orange on click */
+}
